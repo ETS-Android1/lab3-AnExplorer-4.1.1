@@ -57,6 +57,9 @@ import dev.dworks.apps.anexplorer.model.DocumentsContract.Document;
 import dev.dworks.apps.anexplorer.setting.SettingsActivity;
 import dev.dworks.apps.anexplorer.ui.CircleImage;
 
+import android.widget.Button;
+import android.content.Intent;
+
 /**
  * Display document title editor and save button.
  */
@@ -80,6 +83,8 @@ public class DetailFragment extends DialogFragment {
 	private View contents_layout;
     private CircleImage iconMimeBackground;
     private View path_layout;
+
+    private Button button;
 
     public static void show(FragmentManager fm, DocumentInfo doc) {
 		final Bundle args = new Bundle();
@@ -113,7 +118,11 @@ public class DetailFragment extends DialogFragment {
 		}
 	}
 
-	@Override
+
+
+
+
+		@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Bundle args = getArguments();
@@ -121,6 +130,8 @@ public class DetailFragment extends DialogFragment {
 			doc = args.getParcelable(EXTRA_DOC);
 			isDialog = args.getBoolean(EXTRA_IS_DIALOG);
 		}
+
+
 	}
 	
 	@Override
@@ -142,9 +153,18 @@ public class DetailFragment extends DialogFragment {
         iconMimeBackground = (CircleImage)view.findViewById(R.id.icon_mime_background);
 
 		icon = (FrameLayout)view.findViewById(android.R.id.icon);
-		
+
+		button = (Button) view.findViewById(R.id.button);
+		button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(),dev.dworks.apps.anexplorer.AboutActivity.class);
+				startActivity(intent);
+			}
+		});
 		return view;
 	}
+
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
