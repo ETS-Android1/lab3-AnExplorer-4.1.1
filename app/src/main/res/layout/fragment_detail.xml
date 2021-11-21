@@ -58,11 +58,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingEnd="?android:attr/listPreferredItemPaddingRight"
-            android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
-            android:paddingRight="?android:attr/listPreferredItemPaddingRight"
             android:paddingStart="?android:attr/listPreferredItemPaddingLeft"
-            android:paddingTop="20dp">
+            android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+            android:paddingTop="20dp"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingRight"
+            android:paddingRight="?android:attr/listPreferredItemPaddingRight">
 
 
             <TextView
@@ -70,11 +70,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
+                android:background="#FCEE83"
                 android:fontFamily="sans-serif-regular"
                 android:padding="10dp"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
-                android:textSize="20sp" />
+                android:textSize="30sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
