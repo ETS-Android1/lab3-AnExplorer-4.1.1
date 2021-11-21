@@ -45,6 +45,7 @@
                 android:minHeight="200dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop" />
+
         </FrameLayout>
 
         <LinearLayout
@@ -198,6 +199,12 @@
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="Share Device" />
     </LinearLayout>
 
 </ScrollView>
