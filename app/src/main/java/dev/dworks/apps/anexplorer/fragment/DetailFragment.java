@@ -84,7 +84,10 @@ public class DetailFragment extends DialogFragment {
     private CircleImage iconMimeBackground;
     private View path_layout;
 
+
     private Button button;
+    private Button button2;
+
 
     public static void show(FragmentManager fm, DocumentInfo doc) {
 		final Bundle args = new Bundle();
@@ -162,6 +165,15 @@ public class DetailFragment extends DialogFragment {
 				startActivity(intent);
 			}
 		});
+		button2=(Button)view.findViewById(R.id.button2);
+		button2.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), dev.dworks.apps.anexplorer.ShareDeviceActivity.class);
+				startActivity(intent);
+				}
+			});
+
 		return view;
 	}
 
