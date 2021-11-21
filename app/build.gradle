@@ -9,7 +9,7 @@ if (keystoreProperties.exists()) {
 }
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 30
 
     applicationVariants.all { variant ->
         variant.outputs.all {
@@ -110,7 +110,7 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
-    buildToolsVersion = '25.0.2'
+    buildToolsVersion = '31.0.0'
 }
 
 dependencies {

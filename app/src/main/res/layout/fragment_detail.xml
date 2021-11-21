@@ -41,9 +41,9 @@
                 android:id="@+id/icon_thumb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:contentDescription="@null"
                 android:minHeight="200dp"
-                android:layout_gravity="center"
                 android:scaleType="centerCrop" />
         </FrameLayout>
 
@@ -51,11 +51,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingEnd="?android:attr/listPreferredItemPaddingRight"
-            android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
-            android:paddingRight="?android:attr/listPreferredItemPaddingRight"
             android:paddingStart="?android:attr/listPreferredItemPaddingLeft"
-            android:paddingTop="20dp">
+            android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+            android:paddingTop="20dp"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingRight"
+            android:paddingRight="?android:attr/listPreferredItemPaddingRight">
 
 
             <TextView
