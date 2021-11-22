@@ -67,6 +67,8 @@ public class AboutActivity extends AboutVariantFlavour implements View.OnClickLi
 		initControls();
 	}
 
+	
+
 	@Override
 	public String getTag() {
 		return TAG;
